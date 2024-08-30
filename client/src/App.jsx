@@ -1,5 +1,11 @@
+import { BrowserRouter as Router } from "react-router-dom";
+import Navigation from "./components/Navigation";
 const App = () => {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <Router>
+      <Navigation />
+    </Router>
+  );
 };
 
 export default App;
