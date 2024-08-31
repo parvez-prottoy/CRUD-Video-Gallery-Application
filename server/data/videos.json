@@ -1,0 +1,57 @@
+[
+  {
+    "title": "JavaScript Tutorial Full Course - Beginner to Pro (2024)",
+    "description": "This JavaScript tutorial and JavaScript full course is a project based series of JavaScript tutorials for software engineers. Each JavaScript tutorial builds on a project and provides some JavaScript exercises to practice what we learned. By the end, we'll learn how to create complex, interactive websites with JavaScript, HTML, and CSS, which will help you become a web developer and software engineer.",
+    "author": "SuperSimpleDev",
+    "image": "https://yt3.googleusercontent.com/ytc/AIdro_laf9dDyNATE1_RdVUKthwnwT9TSm9N0my0jL2H8gCvjw=s160-c-k-c0x00ffffff-no-rj",
+    "date": "May 9, 2024",
+    "duration": "22:15:56",
+    "views": "15,77,388",
+    "link": "https://youtu.be/EerdGm-ehJQ?si=CRhTU0_kl97AT1-V",
+    "thumbnail": "https://i.ytimg.com/vi/EerdGm-ehJQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAqM17HAWKZZN44Ovb0iXWIzxF4iQ"
+  },
+  {
+    "title": "React Tutorial for Beginners",
+    "description": "Master React 18 with TypeScript! ⚛️  Build amazing front-end apps with this beginner-friendly tutorial.",
+    "author": "Programming with Mosh",
+    "image": "https://yt3.googleusercontent.com/lCeCb47hCbXWFa0I4gi8uWDHzWSs7sjK4FDmk7lFEUMRNp6QRzIQOkwaKhwv7eNKZacRI2uR=s160-c-k-c0x00ffffff-no-rj",
+    "date": "March 12, 2023",
+    "duration": "1:20:03",
+    "views": "30,57,816",
+    "link": "https://youtu.be/SqcY0GlETPk?si=FNFud4X0aGsbiBbX",
+    "thumbnail": "https://i.ytimg.com/vi/SqcY0GlETPk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBxxEfavbxbAns6HTvgSrFA1b0Rrw"
+  },
+  {
+    "title": "JavaScript Programming - Full Course",
+    "description": "Learn JavaScript from scratch by solving over a hundred different coding challenges. Go here for the interactive browser version: https://scrimba.com/learn/learnjavasc...",
+    "author": "Programming with Mosh",
+    "image": "https://yt3.googleusercontent.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s160-c-k-c0x00ffffff-no-rj",
+    "date": "June 21, 2021",
+    "duration": "7:44:19",
+    "views": "35,42,026",
+    "link": "https://youtu.be/jS4aFq5-91M?si=ehKOCjvdzSve9GJe",
+    "thumbnail": "https://i.ytimg.com/vi/jS4aFq5-91M/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCyZZs-s_Ss0ahCRGI0C6KzVMwPgg"
+  },
+  {
+    "title": "Master React Routing: Complete Guide to React Router 6.4 in Bangla",
+    "description": "This comprehensive tutorial will dive deep into React Routing with React Router 6.4! 🌟 Learn how to manage navigation, protect routes, and implement advanced routing features in your React applications. Whether you're a beginner or an experienced developer, this guide will help you master React Router and take your React projects to the next level.",
+    "author": "Anisul Islam",
+    "image": "https://yt3.googleusercontent.com/9uhxb35_bKMZlZgwaJd7ZE0CuC7GelDRd6ishb-mGN07d11l_J7lliuBV9pkDa1NHpkFdrhK4g=s160-c-k-c0x00ffffff-no-rj",
+    "date": "June 2, 2024",
+    "duration": "2:35:39",
+    "views": "3,768",
+    "link": "https://youtu.be/5reN4CpCOZA?si=ayG_TRNXrdmElIBj",
+    "thumbnail": "https://i.ytimg.com/vi/5reN4CpCOZA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLADVBMtHFl9aTwJ_I5-QYWgMMYZ6Q"
+  },
+  {
+    "title": "React Redux Crash Course Bangla with Redux Toolkit",
+    "description": "In this video, we'll delve into the concept of Redux and guide you through constructing a React application from the ground up. We'll cover setting up all the necessary boilerplate for Redux using Redux Toolkit, including managing the store/state, actions, reducers, and other essential aspects of the Redux state management system. This tutorial is tailored for individuals familiar with the fundamentals of React who are eager to explore Redux.",
+    "author": "Learn With Sumit",
+    "image": "https://yt3.googleusercontent.com/9uhxb35_bKMZlZgwaJd7ZE0CuC7GelDRd6ishb-mGN07d11l_J7lliuBV9pkDa1NHpkFdrhK4g=s160-c-k-c0x00ffffff-no-rj",
+    "date": "April 10, 2024",
+    "duration": "1:37:36",
+    "views": "22,702",
+    "link": "https://youtu.be/qhll3DXuLHI?si=MZpmLZu_e_drH6tT",
+    "thumbnail": "https://i.ytimg.com/vi/qhll3DXuLHI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCAmFTrwKMWRbpv0ZUL4s5u44qlSA"
+  }
+]

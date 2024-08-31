@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const baseRoute = require("./src/routes/base.route");
+const videoRoute = require("./src/routes/videos.route");
 const { notFoundHandler, errorHandler } = require("./src/utils/error");
 
 // ? connect DB
@@ -16,6 +17,7 @@ app.use([
 ]);
 // ? routes
 app.use("/", baseRoute);
+app.use("/api/v1/videos", videoRoute);
 // ? error handler
 app.use(notFoundHandler);
 app.use(errorHandler);
