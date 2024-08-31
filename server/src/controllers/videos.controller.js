@@ -3,7 +3,7 @@ const VideoModel = require("../models/video.model");
 const getVideo = async (req, res) => {
   try {
     const { id } = req.params;
-    const video = await VideoModel.find({ _id: id });
+    const video = await VideoModel.findOne({ _id: id });
     res.status(200).json({
       status: "success",
       data: video,
