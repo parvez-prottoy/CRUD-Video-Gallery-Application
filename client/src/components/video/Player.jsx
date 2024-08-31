@@ -1,16 +1,15 @@
 import React from "react";
+import ReactPlayer from "react-player/lazy";
 
-const Player = () => {
+const Player = ({ link, title }) => {
   return (
-    <iframe
+    <ReactPlayer
+      title={title}
+      className="react-player aspect-video"
+      url={link}
       width="100%"
-      className="aspect-video"
-      src="https://www.youtube-nocookie.com/embed/6O4s7v28nlw"
-      title="Some video title"
-      frameBorder=""
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
+      height="80%"
+    />
   );
 };
 
