@@ -3,6 +3,8 @@ const app = express();
 const baseRoute = require("./src/routes/base.route");
 const { notFoundHandler, errorHandler } = require("./src/utils/error");
 
+// ? connect DB
+const connectDB = require("./config/db").apply();
 // ? use middleware
 const morgan = require("morgan");
 const cors = require("cors");
