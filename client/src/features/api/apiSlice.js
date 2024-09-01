@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 const apiSlice = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:9000/api/v1",
+    baseUrl: "https://crud-video-gallery-application.vercel.app/api/v1",
   }),
   tagTypes: ["Videos", "Video", "RelatedVideos"],
   endpoints: (builder) => ({
