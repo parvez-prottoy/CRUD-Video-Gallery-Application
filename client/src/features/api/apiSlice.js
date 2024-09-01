@@ -22,8 +22,20 @@ const apiSlice = createApi({
         { type: "RelatedVideos", id: arg.id },
       ],
     }),
+    addVideo: builder.mutation({
+      query: (data) => ({
+        url: "/videos",
+        method: "POST",
+        body: data,
+      }),
+      invalidatesTags: ["Videos"],
+    }),
   }),
 });
-export const { useGetVideosQuery, useGetVideoQuery, useGetRelatedVideosQuery } =
-  apiSlice;
+export const {
+  useGetVideosQuery,
+  useGetVideoQuery,
+  useGetRelatedVideosQuery,
+  useAddVideoMutation,
+} = apiSlice;
 export default apiSlice;

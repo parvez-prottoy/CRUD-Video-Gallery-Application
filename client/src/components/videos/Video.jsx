@@ -27,11 +27,11 @@ const Video = ({ video }) => {
           </Link>
 
           <div className="flex flex-col">
-            <Link to={`/videos/1`}>
+            <Link to={`/videos/${_id}`}>
               <p className="text-slate-900 text-sm font-semibold">{title}</p>
             </Link>
             <Link
-              to={`/videos/1`}
+              to={`/videos/${_id}`}
               className="text-gray-400 text-xs mt-2 hover:text-gray-600"
             >
               {author}

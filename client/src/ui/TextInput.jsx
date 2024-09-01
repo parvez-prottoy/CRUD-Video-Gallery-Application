@@ -16,6 +16,7 @@ const TextInput = ({ title, ...attributes }) => {
         autoComplete="given-name"
         className="mt-2 p-2  block w-full shadow-sm sm:text-sm border border-gray-300 rounded-md"
         {...attributes}
+        required
       />
     </>
   );
