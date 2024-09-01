@@ -1,5 +1,20 @@
 const VideoModel = require("../models/video.model");
 
+const deleteVideo = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const deleteVideo = await VideoModel.deleteOne({ _id: id });
+    res.status(200).json({
+      status: "success",
+      deleteId: id,
+    });
+  } catch (error) {
+    res.status(500).json({
+      status: "error",
+      message: error?.message,
+    });
+  }
+};
 const postVideo = async (req, res) => {
   try {
     const data = req.body || {};
@@ -65,4 +80,10 @@ const getVideos = async (_req, res) => {
   }
 };
 
-module.exports = { getVideos, getVideo, getRelatedVideos, postVideo };
+module.exports = {
+  getVideos,
+  getVideo,
+  getRelatedVideos,
+  postVideo,
+  deleteVideo,
+};
