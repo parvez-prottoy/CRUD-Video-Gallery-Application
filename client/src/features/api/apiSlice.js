@@ -5,7 +5,7 @@ const apiSlice = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: "http://localhost:9000/api/v1",
   }),
-  tagTypes: ["Videos", "Video"],
+  tagTypes: ["Videos", "Video", "RelatedVideos"],
   endpoints: (builder) => ({
     getVideos: builder.query({
       query: () => "/videos",
@@ -16,7 +16,14 @@ const apiSlice = createApi({
       query: (id) => `/videos/${id}`,
       providesTags: (result, error, arg) => [{ type: "Video", id: arg }],
     }),
+    getRelatedVideos: builder.query({
+      query: ({ id, title }) => `/videos/${id}/${title}`,
+      providesTags: (result, error, arg) => [
+        { type: "RelatedVideos", id: arg.id },
+      ],
+    }),
   }),
 });
-export const { useGetVideosQuery, useGetVideoQuery } = apiSlice;
+export const { useGetVideosQuery, useGetVideoQuery, useGetRelatedVideosQuery } =
+  apiSlice;
 export default apiSlice;

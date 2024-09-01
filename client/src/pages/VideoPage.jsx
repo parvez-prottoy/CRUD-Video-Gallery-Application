@@ -7,6 +7,7 @@ import PlayerLoader from "../ui/loaders/PlayerLoader";
 import DescriptionLoader from "../ui/loaders/DescriptionLoader";
 import Error from "../ui/Error";
 import { useParams } from "react-router-dom";
+import RelatedVideoLoader from "../ui/loaders/RelatedVideoLoader";
 
 const VideoPage = () => {
   const { videoId } = useParams();
@@ -39,7 +40,11 @@ const VideoPage = () => {
           <div className="col-span-full w-full space-y-8 lg:col-span-2">
             {content}
           </div>
-          <RelatedVideos />
+          {isLoading ? (
+            <RelatedVideoLoader />
+          ) : (
+            video._id && <RelatedVideos id={video._id} title={video.title} />
+          )}
         </div>
       </div>
     </section>
