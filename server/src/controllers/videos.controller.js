@@ -8,7 +8,7 @@ const getRelatedVideos = async (req, res) => {
     const relatedVideos = await VideoModel.find({
       _id: { $ne: id },
       title: { $regex: keywords.join("|"), $options: "i" },
-    });
+    }).limit(4);
     res.status(200).json({
       status: "success",
       data: relatedVideos,
