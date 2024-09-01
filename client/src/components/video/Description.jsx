@@ -1,9 +1,18 @@
 import { FiEdit } from "react-icons/fi";
 import { MdDeleteOutline } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useDeleteVideoMutation } from "../../features/api/apiSlice";
+import toast from "react-hot-toast";
 
 const Description = ({ video }) => {
-  const { title, date, description } = video || {};
+  const navigate = useNavigate();
+  const [deleteVideo, { isLoading }] = useDeleteVideoMutation();
+  const { _id, title, date, description } = video || {};
+  const handleDelete = () => {
+    deleteVideo(_id);
+    toast.success("Video was deleted successfully");
+    navigate("/");
+  };
   return (
     <div>
       <h1 className="text-lg font-semibold tracking-tight text-slate-800">
@@ -23,9 +32,12 @@ const Description = ({ video }) => {
           </Link>
           <div className="flex items-center gap-1 text-[#e91348] font-medium cursor-pointer">
             <MdDeleteOutline className="text-lg block" />
-            <a href="add-video.html" className="text-sm leading-[1.7142857] ">
+            <button
+              onClick={handleDelete}
+              className="text-sm leading-[1.7142857] "
+            >
               Delete
-            </a>
+            </button>
           </div>
         </div>
       </div>

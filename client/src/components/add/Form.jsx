@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 
 const Form = () => {
   const navigate = useNavigate();
-  const [addVideo, { isLoading, isError, isSuccess }] = useAddVideoMutation();
+  const [addVideo, { isLoading, isError }] = useAddVideoMutation();
   const initialState = {
     title: "",
     description: "",
