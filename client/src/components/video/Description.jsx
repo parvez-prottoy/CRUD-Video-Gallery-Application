@@ -24,7 +24,7 @@ const Description = ({ video }) => {
         </h2>
         <div className="flex gap-10 w-48">
           <Link
-            to={`/videos/edit/1`}
+            to={`/videos/edit/${_id}`}
             className="flex items-center gap-1 text-yellow-600 font-medium cursor-pointer"
           >
             <FiEdit className="text-lg block" />

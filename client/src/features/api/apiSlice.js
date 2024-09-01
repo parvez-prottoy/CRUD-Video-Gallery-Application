@@ -37,6 +37,18 @@ const apiSlice = createApi({
       }),
       invalidatesTags: ["Videos"],
     }),
+    updateVideo: builder.mutation({
+      query: ({ id, data }) => ({
+        url: `/videos/${id}`,
+        method: "PATCH",
+        body: data,
+      }),
+      invalidatesTags: (result, error, arg) => [
+        "Videos",
+        { type: "Video", id: arg.id },
+        { type: "RelatedVideos", id: arg.id },
+      ],
+    }),
   }),
 });
 export const {
@@ -45,5 +57,6 @@ export const {
   useGetRelatedVideosQuery,
   useAddVideoMutation,
   useDeleteVideoMutation,
+  useUpdateVideoMutation,
 } = apiSlice;
 export default apiSlice;
