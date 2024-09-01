@@ -1,5 +1,20 @@
 const VideoModel = require("../models/video.model");
 
+const postVideo = async (req, res) => {
+  try {
+    const data = req.body || {};
+    const video = await VideoModel.create(data);
+    res.status(200).json({
+      status: "success",
+      data: video,
+    });
+  } catch (error) {
+    res.status(500).json({
+      status: "error",
+      message: error?.message,
+    });
+  }
+};
 const getRelatedVideos = async (req, res) => {
   try {
     const { id, title } = req.params;
@@ -50,4 +65,4 @@ const getVideos = async (_req, res) => {
   }
 };
 
-module.exports = { getVideos, getVideo, getRelatedVideos };
+module.exports = { getVideos, getVideo, getRelatedVideos, postVideo };
